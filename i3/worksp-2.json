@@ -1,0 +1,109 @@
+// vim:ts=4:sw=4:et
+{
+    // stacked split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "marks": [],
+    "percent": 0.6,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1396,
+               "width": 1404,
+               "x": 2,
+               "y": 42
+            },
+            "marks": [],
+            "name": "i3: Layout saving in i3 — Mozilla Firefox",
+            "percent": 0.5,
+            "swallows": [
+               {
+                  "class": "^firefox$",
+                  "instance": "^Navigator$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "none",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 610,
+               "width": 610,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "TLCL-19.01.pdf — The Linux Command Line",
+            "percent": 0.5,
+            "swallows": [
+               {
+                  "class": "^Evince$",
+                  "instance": "^evince$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // tabbed split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "marks": [],
+    "percent": 0.4,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 436,
+               "width": 804,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "jsc@dlnx: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+                  "class": "^XTerm$",
+                  "instance": "^xterm$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 436,
+               "width": 804,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "jsc@dlnx: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+                  "class": "^XTerm$",
+                  "instance": "^xterm$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
