@@ -66,9 +66,10 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ ipv4, "[ IP:%s]",         "ens33"},
-	{ cpu_perc, "[ %s%%]",       NULL },
-	{ ram_perc, "[ %s%%]",       NULL },
-	{ disk_perc, "[ %s%%]",     "//" },
+    { run_command, "[ %4s%%] ", "/bin/sh -c \"wpctl get-volume @DEFAULT_SINK@ | tr -d 'Volume: '\"" },
+	{ cpu_perc, "[ %2s%%]",       NULL },
+	{ ram_perc, "[ %2s%%]",       NULL },
+	{ disk_perc, "[ %2s%%]",     "//" },
 	{ battery_perc, "[ %s%%]",   "BAT0"},
 	{ datetime, "[%s]",           " %b-%d  %H:%M" },
 	{ keymap, "[ %s]",               NULL},
