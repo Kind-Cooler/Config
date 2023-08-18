@@ -17,7 +17,7 @@ alias l.='ls -ld .* --color=auto'
 alias la='ls -la --color=auto'
 alias vi='vim'
 
-PS1='[\e[32m\u@\h\e[0m \w]\e[32m\$\e[0m '
+# PS1='[\e[32m\u@\h\e[0m \w]\e[32m\$\e[0m '
 
-#PS1="\[[\e[32m\]\u@\h \[\e[1m\]\w]\$ "
-#'[\u@\h \W]\$ '
+# PS1="\[[\e[32m\]\u@\h \[\e[1m\]\w]\$ "
+PS1='[\u@\h \W]\$ '
