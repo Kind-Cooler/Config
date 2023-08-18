@@ -1,0 +1,61 @@
+## Enable a color supported XTerm ##
+xterm.termName: xterm-256color
+
+## Ensure locale is set to UTF-8 ##
+xterm.locale: true
+xterm*utf8: true
+xterm.renderFont:false
+
+## Set Font & Size Default ##
+xterm*font: -*-terminus-medium-*-*-*-18-*-*-*-*-*-iso10646-1
+
+## unreadable
+xterm*font1: -*-terminus-medium-*-*-*-12-*-*-*-*-*-iso10646-1
+## tiny
+xterm*font2: -*-terminus-medium-*-*-*-14-*-*-*-*-*-iso10646-1
+## small
+xterm*font3: -*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-1
+## medium
+xterm*font4: -*-terminus-medium-*-*-*-22-*-*-*-*-*-iso10646-1
+## large
+xterm*font5: -*-terminus-medium-*-*-*-24-*-*-*-*-*-iso10646-1
+## huge
+xterm*font6: -*-terminus-medium-*-*-*-32-*-*-*-*-*-iso10646-1
+
+## Invierte los colores ##
+xterm*Background: black
+xterm*Foreground: antique white
+
+! ## Scrollbar ##
+xterm*internalBorder:3
+xterm*scrollBar: false
+xterm*scrollKey: true
+
+! Do not scroll when there is new input
+! xterm*scrollTtyOutput: false
+
+! Scrolling by using Shift-PageUp / Shift-PageDown or mousewheel by default ##
+! Lines of output you can scroll back over
+xterm*saveLines: 15000
+
+! Enable copy/paste hotkeyes (mouse highlight = copy ,  shift+Insert = paste)
+xterm*selectToClipboard: true
+
+! ## Select text ##
+xterm*highlightSelection: true
+! Remove trailing spaces
+xterm*trimSelection: true
+
+! ## Keybindings ##
+xterm*vt100.translations: #override \n\
+  Ctrl <Key>-: smaller-vt-font() \n\
+  Ctrl <Key>+: larger-vt-font() \n\
+  Ctrl <Key>0: set-vt-font(d) \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+## Mods al Cursor y al Puntero de Mouse
+xterm*cursorBlink:true
+xterm*cursorColor:green
+xterm*pointerColor:red
+
