@@ -69,8 +69,8 @@ static const struct arg args[] = {
     	{ run_command, "[ %4s%%] ", "/bin/sh -c \"wpctl get-volume @DEFAULT_SINK@ | tr -d 'Volume: '\"" },
 	{ cpu_perc, "[ %2s%%]",       NULL },
 	{ ram_perc, "[ %2s%%]",       NULL },
-	{ disk_used, "[ %2s/",     "//" },
-	{ disk_total, "%2s]",		"//"},
+	{ disk_perc, "[ %2s%%/",     "//" },
+/*	{ disk_total, "%2s]",		"//"},*/
 	{ battery_perc, "[ %s%%]",   "BAT0"},
 	{ datetime, "[%s]",           " %b-%d  %H:%M" },
 	{ keymap, "[ %s]",               NULL},
