@@ -5,13 +5,17 @@ set number
 set shiftwidth=4
 set tabstop=4
 set expandtab
-" " ----------
+" ---------------------
 set scrolloff=10
 set showcmd
 set showmode
 set history=1000
 
+set hlsearch
+set autoindent
+
 colorscheme darkblue
+
 " set guifont=Monospace\ Regular\ 13
 "
 " " STATUS LINE ------------------------------------------------------------
