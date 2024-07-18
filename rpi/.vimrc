@@ -7,9 +7,10 @@ set nocompatible
 "filetype indent on
 
 syntax on
-set number
+"set number
 set cursorline
 set colorcolumn=80
+set foldcolumn=2
 
 set shiftwidth=4
 set tabstop=4
@@ -49,7 +50,7 @@ colorscheme habamax
 
 " Mappings code goes here.
 " Compile and run C code:
-map <F8> :w <CR> :!gcc -Wall % && ./a.out <CR>
+map <F8> :w <CR> :!gcc -Wall % -lm && ./a.out <CR>
 
 " }}}
 
